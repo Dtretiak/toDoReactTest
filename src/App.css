@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+#dark {
+  background-color: #252525;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#light {
+  background-color: #F1EFEF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  position: relative;
+  background-color: #252525;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 800px;
+  height: 100vh;
+  border-radius: 10px;
+  display: flex;
+}
+
+#light .main-container {
+  background-color: #F1EFEF;
+  border: 1px solid #252525;
+}
+
+#dark .main-container {
+  background-color: #252525;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.action-container {
+  width: 300px;
+  height: 90vh;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 20px;
+}
+
+#light .action-container {
+  border: 1px solid #252525;
+}
+
+#dark .action-container {
+  border: 1px solid #fff;
+}
+
+.input-field {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#light .input-field {
+  background-color: #F1EFEF;
+  border: 1px solid #252525;
+  color: #252525;
+}
+
+#dark .input-field {
+  background-color: #252525;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.btn-change-mode {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #7D7C7C;
+  color: #fff;
+}
+
+.table-container {
+  border-radius: 10px;
+  margin: 20px;
+  width: 500px;
+  height: 90vh;
+}
+
+#light .table-container {
+  border: 1px solid #252525;
+  color: #252525;
+}
+
+#dark .table-container {
+  border: 1px solid #fff;
+}
+
+.table-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  background-color: #7D7C7C;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#light .table-heading {
+  color: #fff;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.table-row td {
+  flex: 1;
+}
+
+.list-direction {
+  display: flex;
+  flex-direction: column;
+}
+
+.switch {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  margin-right: 10px;
 }
